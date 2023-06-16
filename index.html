@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <meta charset="UTF-8">
+        <!-- title and description -->
+        <title>Title</title>
+        <meta name="description" content="Description content.">
+        <!-- viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- styles -->
+        <link rel="stylesheet" href="./styles/style.css" type="text/css">
+        <!-- icons -->
+        <link rel="icon" href="favicon.png"> <!--32х32-->
+        <link rel="apple-touch-icon" href="./src/icons/touch-icon-iphone.png"> <!--60х60-->
+        <link rel="apple-touch-icon" sizes="76x76" href="./src/icons/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./src/icons/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./src/icons/touch-icon-ipad-retina.png">
+        <!-- open graph -->
+        <meta property="og:title" content="Open graph title" />
+        <!--
+        <meta property="og:type" content="./src/video/mp4" />
+        <meta property="og:video" content="https://site.com/video/example.mp4" />
+        -->
+        <!--
+        <meta property="og:type" content="./src/audio/mp3" />
+        <meta property="og:audio" content="https://site.com/audio/example.mp3" />
+        -->
+        <meta property="og:type" content="article" /> <!-- if not audio and not video -->
+        <meta property="og:url" content="https://website.com/" />
+        <meta property="og:image" content="./src/icons/og.png" /> <!-- OG image is 1200×630 pixels  -->
+        <meta property="og:site_name" content="website.com" /> <!-- not important -->
+        <meta property="og:description" content="Description content." /> <!-- not important -->
+        <meta property="og:locale" content="en_US" /> <!-- default: "en_US" -->
+    </head>
+    <body>
+        <!-- content -->
+        <form>
+            <label for="name">Введите имя</label> <br>
+            <input id="name" type="text"><br>    
+            <label for="name">Введите пароль</label> <br> 
+            <input type="password" id = "passw"><br>
+            <input type="date"><br>
+            <label for="change">выбери язык</label> <br> 
+            <select multiple id = "change">
+                <option>java </option>
+                <option selected>python</option>
+                <option>html</option>
+                <option>css</option>
+                <option>javascript</option>
+            </select><br>
+            <h3>выберите специализацию</h2>
+            <input type="radio" name = language id = "radio1">
+            <label for="radio1">Front-end</label><br>
+
+            <input type="radio" name = language id = "radio1">
+            <label for="radio2">Back-end</label><br>
+
+            <input type="radio" name = language id = "radio3">
+            <label for="radio3">Full-stack</label><br>
+            <h3>поле для ввода дополнительной информации</h2>
+            <input type="checkbox" id = "chekbox">
+            <label for="chekbox">согласны ли вы на отправку информации</label><br>
+            <textarea name="" cols="30" rows="10">ssfwe</textarea><br>
+
+            <input type="button" value= "отправить"><br>
+            <input type="reset" value="очистить"><br>
+
+        </form>
+        <!-- scripts -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
